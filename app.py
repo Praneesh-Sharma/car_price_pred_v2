@@ -10,23 +10,20 @@ with open("car_price.sav", 'rb') as f:
 
 col1, col2 = st.columns(2)
 
-with col1:
-  a = st.number_input("Present Price:",
+a = st.number_input("Present Price:",
                       min_value=0.20,
                       max_value=100.00,
                       step=1
       )
 
-with col2:
-  b = st.number_input("KMs driven",
+b = st.number_input("KMs driven",
                       min_value=50,
                       max_value=500000,
                       step=1
       )
 
-with col1:
-  c = st.selectbox("Fuel Type",
+c = st.selectbox("Fuel Type",
                    ("Petrol", "Diesel", "CNG),
                    index=None,
                    placeholder="Select fuel type...",
-                        )
+                  )
