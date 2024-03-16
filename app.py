@@ -14,11 +14,8 @@ col1, col2 = st.columns(2)
 with col1:
    a = st.number_input("Present Price:")
 
-# b = st.number_input("KMs driven",
-#                       min_value=50,
-#                       max_value=500000,
-#                       step=1
-#       )
+with col2:
+   b = st.number_input("KMs driven")
 
 # c = st.selectbox("Fuel Type",
 #                    ("Petrol", "Diesel", "CNG"),
