@@ -60,7 +60,7 @@ with col1:
    
 st.write('---')
 
-# pred=''
+pred=''
 
 if st.button('Car Price Prediction'):
    user_input = [a,b,c,d,e,f]
