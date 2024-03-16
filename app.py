@@ -47,9 +47,9 @@ with col1:
                    index=None,
                    placeholder="Select transmission type...",
                   )
-   if(d=="Manual"):
+   if(e=="Manual"):
       e=1
-   elif(d=="Automatic"):
+   elif(e=="Automatic"):
       e=0
 
 with col2:
