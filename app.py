@@ -8,7 +8,7 @@ st.title('Car Price Prediction')
 with open("car_price.sav", 'rb') as f:
    wine_pred_model = pickle.load(f)
 
-col1, col2 = st.columns(2)
+# col1, col2 = st.columns(2)
 
 a = st.number_input("Present Price:",
                       min_value=0.20,
