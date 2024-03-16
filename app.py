@@ -17,7 +17,7 @@ with col1:
 with col2:
    b = st.number_input("KMs driven")
 
-with col3:
+with col1:
    c = st.selectbox("Fuel Type",
                    ("Petrol", "Diesel", "CNG"),
                    index=None,
