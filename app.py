@@ -48,9 +48,9 @@ with col1:
                    placeholder="Select transmission type...",
                   )
    if(d=="Automatic"):
-      d=0
+      e=0
    elif(d=="Manual"):
-      d=1
+      e=1
 
 with col2:
    f = st.slider('Number of Previous Owners', 0, 3, 0)
