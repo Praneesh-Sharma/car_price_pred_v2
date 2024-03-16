@@ -53,17 +53,17 @@ with col1:
       d=1
 
 with col2:
-   e = st.slider('Number of Previous Owners', 0, 3, 0)
+   f = st.slider('Number of Previous Owners', 0, 3, 0)
 
 with col1:
-   f = st.slider('Number of years', 5, 20, 5)
+   g = st.slider('Number of years', 5, 20, 5)
    
 st.write('---')
 
 pred=''
 
 if st.button('Car Price Prediction'):
-   user_input = [a,b,c,d,e,f]
+   user_input = [a,b,c,d,e,f,g]
    pred = model.predict([user_input])
 
 st.success(pred)
