@@ -8,13 +8,11 @@ st.title('Car Price Prediction')
 with open("car_price.sav", 'rb') as f:
    wine_pred_model = pickle.load(f)
 
-# col1, col2 = st.columns(2)
+col1, col2 = st.columns(2)
 
-# a = st.number_input("Present Price:",
-#                       min_value=0.20,
-#                       max_value=100.00,
-#                       step=1
-#       )
+
+with col1:
+   a = st.number_input("Present Price:")
 
 # b = st.number_input("KMs driven",
 #                       min_value=50,
@@ -27,9 +25,3 @@ with open("car_price.sav", 'rb') as f:
 #                    index=None,
 #                    placeholder="Select fuel type...",
 #                   )
-
-year = st.number_input("Model Year:",
-                      min_value=1995,
-                      max_value=2019,
-                      step=1
-      )
