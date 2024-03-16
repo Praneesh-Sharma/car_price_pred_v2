@@ -66,4 +66,4 @@ if st.button('Car Price Prediction'):
    user_input = [a,b,c,d,e,f,g]
    pred = model.predict([user_input])[0]
 
-st.success(pred)
+st.success(round(pred,2))
