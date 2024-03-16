@@ -23,7 +23,7 @@ with col1:
                    index=None,
                    placeholder="Select fuel type...",
                   )
-   if(c=="Petrol):
+   if(c=="Petrol"):
       c=2
    elif(c=="Diesel"):
       c=1
