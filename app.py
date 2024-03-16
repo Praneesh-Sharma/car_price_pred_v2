@@ -6,7 +6,7 @@ import pickle
 st.title('Car Price Prediction')
 
 with open("car_price.sav", 'rb') as f:
-   wine_pred_model = pickle.load(f)
+   model = pickle.load(f)
 
 col1, col2 = st.columns(2)
 
@@ -58,3 +58,12 @@ with col2:
 with col1:
    f = st.slider('Number of years', 5, 20, 5)
    
+st.write('---')
+
+pred=''
+
+if st.button('Car Price Prediction'):
+   user_input = [a,b,c,d,e,f]
+   pred = model.predict([user_input])
+
+st.success(wine_prediction)
