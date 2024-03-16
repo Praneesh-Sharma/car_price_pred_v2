@@ -23,7 +23,7 @@ b = st.number_input("KMs driven",
       )
 
 c = st.selectbox("Fuel Type",
-                   ("Petrol", "Diesel", "CNG),
+                   ("Petrol", "Diesel", "CNG"),
                    index=None,
                    placeholder="Select fuel type...",
                   )
