@@ -23,3 +23,38 @@ with col1:
                    index=None,
                    placeholder="Select fuel type...",
                   )
+   if(c=="Petrol):
+      c=2
+   elif(c=="Diesel"):
+      c=1
+   elif(c--"CNG"):
+      c=0
+
+with col2:
+   d = st.selectbox("Seller Type",
+                   ("Dealer", "Individual"),
+                   index=None,
+                   placeholder="Select seller type...",
+                  )
+   if(d=="Dealer"):
+      d=0
+   elif(d=="Individual"):
+      d=1
+
+with col1:
+   e = st.selectbox("Transmission Type",
+                   ("Manual", "Automatic"),
+                   index=None,
+                   placeholder="Select transmission type...",
+                  )
+   if(d=="Automatic"):
+      d=0
+   elif(d=="Manual"):
+      d=1
+
+with col2:
+   e = st.slider('Number of Previous Owners', 0, 3, 0)
+
+with col1:
+   f = st.slider('Number of years', 5, 20, 5)
+   
