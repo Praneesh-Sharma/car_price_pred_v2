@@ -27,7 +27,7 @@ with col1:
       c=2
    elif(c=="Diesel"):
       c=1
-   elif(c--"CNG"):
+   elif(c=="CNG"):
       c=0
 
 with col2:
